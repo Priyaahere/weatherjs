@@ -15,8 +15,8 @@ form.addEventListener('submit', function (e) {
 
     let city = cityName.value;
     const myWeatherContainer = document.querySelector('.weatherContainer');
-    const apiKey= "65d9a526030acb7dafc97dbac5532173";
-    let url = 'https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${65d9a526030acb7dafc97dbac5532173}';
+    const apiKey= "f95d81c83d4e9c6edd2334801acbe640";
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
     fetch(url).then((response) => {
         return response.json();
